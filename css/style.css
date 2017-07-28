@@ -1,0 +1,68 @@
+.basic {
+	font-family: 'Basic', sans-serif;
+	font-size: 22px;
+	color: white;
+}
+
+.nav-pills > li > a {
+	background-color: #fa3ffc;
+	color: white;
+}
+.pommestävling {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 22px;
+	color: white;
+}
+
+.hemsida {
+	font-family: 'Lora', serif;
+	color: white;
+
+}
+
+#rubrik {
+	font-family: 'Bellefair', serif;
+	color: white;
+}
+
+.historia {
+	color: white;
+}
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+}
+#startsida {
+	background-image: url("../bilder/startsida.jpeg");
+}
+#historiasida {
+	background-image: url("../bilder/historiafoto.jpeg");
+}
+#olikasorter {
+	background-image: url("../bilder/donken.jpeg");
+}
+#receptsida {
+	background-image: url("../bilder/potato.jpeg");
+}
+.receptrubrik {
+	color: black;
+	font-size:30px;
+}
+#fritera {
+	font-size:30px;
+}
+
+#quizsida {
+	background-image: url("../bilder/quizbild.jpeg");
+}
+
+input {
+	color: black;
+}
+
+form {
+	width: 30%;
+	
+}

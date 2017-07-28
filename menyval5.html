@@ -1,0 +1,87 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Pommes</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body id="quizsida">
+ <div class="container">
+            <a href="index.html"><h1 id="rubrik">POMMES</h1></a>
+        </div>
+
+        <div class="container">
+
+            <!-- Den lilla kolumnen till vänster där menyn finns -->
+            <div class="col-sm-2">
+                <ul class="nav nav-pills nav-stacked nav-default">
+                    <li ><a href="menyval1.html">Historia</a></li>
+                    <li ><a href="menyval2.html">Olika sorter</a></li>
+                    <li ><a href="menyval3.html">Recept</a></li>
+                     <li ><a href="menyval4.html">Klicka inte!</a></li>
+                     <li ><a href="menyval5.html">Quiz</a></li>
+                </ul>
+            </div>
+
+            <!-- Den stora kolumnen till höger om menyn där innehållet finns -->
+            <div class="col-sm-10 hemsida">
+                <h1>Ett quiz om pommes!</h1>
+                <p>Vad heter Max nya pommes?</p>
+                <input type="text" id="gissning1"/>
+                <button onclick="gissa1()">Svara</button>
+
+                 <p>Vad heter donkens pommes?</p>
+                <input type="text" id="gissning2"/>
+                <button onclick="gissa2()">Svara</button>
+
+                    <p>Vad heter Burger Kings pommes?</p>
+                <input type="text" id="gissning3"/>
+                <button onclick="gissa3()">Svara</button>
+                  
+                   <p>Vilka pommes är i bakgrunden?("idk" själv så svaret e inte svårt)</p>
+                <input type="text" id="gissning4"/>
+                <button onclick="gissa4()">Svara</button>
+
+                  <p>När uppfanns pommes?</p>
+                <input type="text" id="gissning5"/>
+                <button onclick="gissa5()">Svara</button>
+
+                   <p>När kom pommes till Sverige?</p>
+                <input type="text" id="gissning6"/>
+                <button onclick="gissa6()">Svara</button>
+
+                   <p>Är pommes gott? (svara "SKIT GOTT")</p>
+                <input type="text" id="gissning7"/>
+                <button onclick="gissa7()">Svara</button>
+            </div>
+
+        </div>
+
+
+
+</body>
+</html> 

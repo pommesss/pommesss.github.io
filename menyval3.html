@@ -1,0 +1,135 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Pommes</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app" id="receptsida">
+<div class="container">
+            <a href="index.html"><h1 id="rubrik">POMMES</h1></a>
+        </div>
+
+        <div class="container">
+
+            <!-- Den lilla kolumnen till vänster där menyn finns -->
+            <div class="col-sm-2">
+                <ul class="nav nav-pills nav-stacked nav-default">
+                    <li ><a href="menyval1.html">Historia</a></li>
+                    <li ><a href="menyval2.html">Olika sorter</a></li>
+                    <li ><a href="menyval3.html">Recept</a></li>
+                     <li ><a href="menyval4.html">Klicka inte!</a></li>
+                    <li ><a href="menyval5.html">Quiz</a></li>
+                </ul>
+            </div>
+
+            <!-- Den stora kolumnen till höger om menyn där innehållet finns -->
+            <div class="col-sm-10 basic">
+                <p id="fritera">Här kommer ett recept på hur en friterar pommes!</p>
+                <p>1 timme</p>
+                <p>4 portioner</p>
+                <p>Ingredienser:</p>
+                <ul>
+                    <li>frityrolja</li>
+                    <li>1-1½ kg potatis (helst mjölig)</li>
+                    <li>2 liter vatten</li>
+                    <li>1 msk ättika</li>
+                    <li>1 msk salt</li>
+                </ul>
+                <ol>
+                <li>Skala och skär potatisarna i stavar. Koka under tiden och vattnet med salt och ättika.</li>
+                <li>Koka potatisstavarna i knappt 10 minuter, potatisen får inte spricka.</li>
+                <li>Ta upp potatisen, lägg den på hushållspapper och låt den torka i ca 15 minuter.</li>
+                <li>Värm frityroljan till 160 grader, sänk ner potatisstavarna och fritera i 3 minuter.Ta sedan upp stavarna och lägg de på hushållspapper tills de har torkat.</li>
+                <li>Värm oljan till 180 grader, sänk ner potatisstavarna och fritera i 1 minut. Låt de torka och salta strax före servering.</li>
+                </ol>
+                <p class="receptrubrik">Här kommer ett recept på hur en lagar pommes i ugn!</p>
+                <p>4 portioner</p>
+                <p>Ingredienser</p>
+                <ul>
+                <li>1 kg potatisar</li>
+                <li>4 msk olivolja</li>
+                <li>flingsalt</li>
+                </ul>
+                <ol>
+                <li>Sätt ugnen på 200 grader. Skrubba potatisen, låt gärna skalet vara kvar.</li>
+                <li>Skär bort långsidorna på potatisen så att en så rektangulär form som möjligt kvarstår (men spara långsidorna, de är också goda!). Kortsidorna låter du vara. Skär potatisen i 1cm tjocka skivor, och skär skivorna till jämnstora pommes.</li>
+                <li>Lägg allt i en skål med kallt vatten och skölj tills vattnet är klart för att få bort stärkelsen. Torka sedan pinnarna torra med hushållspapper.</li>
+                <li>Häll ut vattnet i bunken och lägg tillbaka pommesen. Ringla över olivolja och vänd runt potatisen noga. Det här är ett viktigt steg, så se till att alla sidorna på potatisarna blir täckta av olja!</li>
+                <li>Lägg ut potatisen på en plåt (täck gärna med bakplåtspapper). Se till att bitarna inte ligger på varandra. Använd hellre två plåtar om det blir trångt.</li>
+                <li>Ugnsstek i en halvtimme tills de är gyllene, men vänd runt dom var 10:e minut och håll lite koll. Beroende på hur tjocka bitar du skurit så kan tiden i ugnen kortas av. Den andra gången du vänder dom saltar du generöst. Servera direkt!</li>
+                </ol>
+                <p class="receptrubrik">Här kommer ett recept på krispiga sötpotatis pommes!</p>
+                <p>Ingredienser:</p>
+                <ul>
+                <li>1 stor eller 2 mindre sötpotatis (ca 400 gram)</li>
+                <li>2 msk potatismjöl</li>
+                <li>2 msk potatismjöl</li>
+                <li>flingsalt</li>
+                <li>rapsolja</li>
+                </ul>
+                <ol>
+                <li>Skala potatisen och skär den i stavar. Lägg stavarna i en bunke och täck med kallt vatten. Låt ligga i ca 40 minuter.
+                    Sätt ugnen på 210 grader.</li>
+                    <li>Häll av vattnet och torka av potatisen lite lätt med hushållspapper. Lägg över potatisen på ett fat och pudra med potatismjöl. Blanda med händerna så alla stavar täcks med mjöl. Ringla lite rapsolja över.</li>
+                    <li>Placera potatisstavarna på en bakplåtsklädd plåt. De ska inte ligga nära varandra utan rada upp dem. Annars blir de inte krispiga.
+                    Baka mitt i ugnen i 35-40 minuter. Vänd potatisen en gång efter ca 30 minuter. Serveras genast med flingsalt på!</li>
+                    </ol>
+            </div>
+
+        </div>
+<div ng-controller="KommentarControl">
+
+        <h1>Kommentarsfält</h1>
+                <form ng-submit="addComment()">
+    <div class="form-group">
+        <input placeholder="Ditt namn" type="text" class="form-control" ng-model="kommentar.skribent">
+    </div>
+    <div class="form-group">
+        <input placeholder="Din kommentar" type="text" class="form-control" ng-model="kommentar.text">
+    </div>
+        <button type="submit" class="btn btn-primary">Kommentera</button>
+        </form>
+
+        <div ng-repeat="kommentar in kommentarer">
+        <p><b>{{ kommentar.skribent }}:</b> {{ kommentar.text }}</p>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>
